@@ -26,7 +26,7 @@ class BurpExtender(IBurpExtender,IContextMenuFactory):
 	def createMenuItems(self, IContextMenuInvocation):
 		self.selectedRequest = IContextMenuInvocation.getSelectedMessages()
 		menuItemList = ArrayList()
-		menuItemList.add(JMenuItem("GET Reponse", actionPerformed = self.onClick))
+		menuItemList.add(JMenuItem("GET Empty Reponse", actionPerformed = self.onClick))
 		return menuItemList
 
 	def makeRequest(self,r):
